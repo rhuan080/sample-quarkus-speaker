@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 public class Speaker extends PanacheEntity {
 
     public String name;
-
     public String minibio;
+    public String idEvent;
 
 }
