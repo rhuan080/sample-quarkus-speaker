@@ -23,7 +23,7 @@ public class SpeakerResource {
     public Response save (Speaker speaker){
         speaker.id = null;
         speaker.persist();
-        return Response.created(URI.create(String.format("/speakers/{id}", speaker.id))).build();
+        return Response.created(URI.create(String.format("/speakers/%d", speaker.id))).build();
     }
 
     @GET
